@@ -1,1 +1,1 @@
-const express = require('express'); const app = express(); const port = 3001; app.get('/', (req, res) => res.send('Hello ERP Backend')); app.listen(port, () => console.log());
+const express = require('express');\nconst app = express();\napp.use(express.json());\napp.use(require('./routes/productRoutes'))\nconst port = 3001;\napp.listen(port, () => console.log());
