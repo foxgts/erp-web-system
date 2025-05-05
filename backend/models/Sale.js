@@ -1,0 +1,1 @@
+const mongoose = require('mongoose');\nconst saleSchema = new mongoose.Schema({ productId: mongoose.Schema.Types.ObjectId, customerId: mongoose.Schema.Types.ObjectId, date: Date, quantity: Number, total: Number });\nmodule.exports = mongoose.model('Sale', saleSchema);
